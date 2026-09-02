@@ -1,0 +1,15 @@
+{
+  "_comment": "Reference template — copy the 'hooks' object into your .bob/settings.json (workspace) or ~/.bob/settings/settings.json (global). Replace PONYTAIL_DIR with the path to your ponytail checkout (e.g. ~/.bob/plugins/ponytail or the npm global install path).",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node PONYTAIL_DIR/hooks/ponytail-mode-tracker.js"
+          }
+        ]
+      }
+    ]
+  }
+}
